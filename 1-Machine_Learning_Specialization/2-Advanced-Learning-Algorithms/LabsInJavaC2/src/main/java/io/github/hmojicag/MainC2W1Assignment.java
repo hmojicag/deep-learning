@@ -46,6 +46,34 @@ import java.util.List;
  *      25 units      15 units    1 unit
  *      layer1         layer2    layer 3
  *
+ *
+ * Here I'm just using the weights of the trained NN by Tensorflow.
+ * In C2_W1_Assignment this is how the Tensorflow model was implemented and trained
+ *
+ * # UNQ_C1
+ * # GRADED CELL: Sequential model
+ *
+ * model = Sequential(
+ *     [
+ *         tf.keras.Input(shape=(400,)),    #specify input size
+ *         ### START CODE HERE ###
+ *         Dense(25, activation='sigmoid', name = 'layer1'),
+ *         Dense(15, activation='sigmoid', name = 'layer2'),
+ *         Dense(1, activation='sigmoid', name = 'layer3'),
+ *         ### END CODE HERE ###
+ *     ], name = "my_model"
+ * )
+ *
+ * model.compile(
+ *     loss=tf.keras.losses.BinaryCrossentropy(),
+ *     optimizer=tf.keras.optimizers.Adam(0.001),
+ * )
+ *
+ * model.fit(
+ *     X,y,
+ *     epochs=20
+ * )
+ *
  */
 public class MainC2W1Assignment {
     public static void main(String[] args) throws Exception {
@@ -53,6 +81,8 @@ public class MainC2W1Assignment {
         ObjectMapper mapper = new ObjectMapper();
         List<double[]> X = mapper.readValue(new File("src/main/resources/X.json"), new TypeReference<List<double[]>>(){});
         List<double[]> Y = mapper.readValue(new File("src/main/resources/y.json"), new TypeReference<List<double[]>>(){});
+
+        // Read the trained values
         List<double[]> W1 = mapper.readValue(new File("src/main/resources/W1.json"), new TypeReference<List<double[]>>(){});
         List<double[]> W2 = mapper.readValue(new File("src/main/resources/W2.json"), new TypeReference<List<double[]>>(){});
         List<double[]> W3 = mapper.readValue(new File("src/main/resources/W3.json"), new TypeReference<List<double[]>>(){});
