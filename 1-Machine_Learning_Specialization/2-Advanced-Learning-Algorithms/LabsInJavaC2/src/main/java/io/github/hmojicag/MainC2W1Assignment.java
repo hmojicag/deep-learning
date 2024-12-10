@@ -79,16 +79,16 @@ public class MainC2W1Assignment {
     public static void main(String[] args) throws Exception {
         // Reads the training set
         ObjectMapper mapper = new ObjectMapper();
-        List<double[]> X = mapper.readValue(new File("src/main/resources/X.json"), new TypeReference<List<double[]>>(){});
-        List<double[]> Y = mapper.readValue(new File("src/main/resources/y.json"), new TypeReference<List<double[]>>(){});
+        List<double[]> X = mapper.readValue(new File("src/main/resources/W1/X.json"), new TypeReference<List<double[]>>(){});
+        List<double[]> Y = mapper.readValue(new File("src/main/resources/W1/y.json"), new TypeReference<List<double[]>>(){});
 
         // Read the trained values
-        List<double[]> W1 = mapper.readValue(new File("src/main/resources/W1.json"), new TypeReference<List<double[]>>(){});
-        List<double[]> W2 = mapper.readValue(new File("src/main/resources/W2.json"), new TypeReference<List<double[]>>(){});
-        List<double[]> W3 = mapper.readValue(new File("src/main/resources/W3.json"), new TypeReference<List<double[]>>(){});
-        double[] b1 = mapper.readValue(new File("src/main/resources/b1.json"), new TypeReference<double[]>(){});
-        double[] b2 = mapper.readValue(new File("src/main/resources/b2.json"), new TypeReference<double[]>(){});
-        double[] b3 = mapper.readValue(new File("src/main/resources/b3.json"), new TypeReference<double[]>(){});
+        List<double[]> W1 = mapper.readValue(new File("src/main/resources/W1/W1.json"), new TypeReference<List<double[]>>(){});
+        List<double[]> W2 = mapper.readValue(new File("src/main/resources/W1/W2.json"), new TypeReference<List<double[]>>(){});
+        List<double[]> W3 = mapper.readValue(new File("src/main/resources/W1/W3.json"), new TypeReference<List<double[]>>(){});
+        double[] b1 = mapper.readValue(new File("src/main/resources/W1/b1.json"), new TypeReference<double[]>(){});
+        double[] b2 = mapper.readValue(new File("src/main/resources/W1/b2.json"), new TypeReference<double[]>(){});
+        double[] b3 = mapper.readValue(new File("src/main/resources/W1/b3.json"), new TypeReference<double[]>(){});
 
         /********************************************** Build the NN. *************************************************/
 

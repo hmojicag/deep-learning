@@ -62,8 +62,8 @@ public class HandWrittenOneOrZeroDataSet extends RandomAccessDataset {
         public HandWrittenOneOrZeroDataSet build() throws IOException {
             // Reads the training set
             ObjectMapper mapper = new ObjectMapper();
-            X = mapper.readValue(new File("src/main/resources/X.json"), new TypeReference<List<float[]>>(){});
-            Y = mapper.readValue(new File("src/main/resources/y.json"), new TypeReference<List<float[]>>(){});
+            X = mapper.readValue(new File("src/main/resources/W1/X.json"), new TypeReference<List<float[]>>(){});
+            Y = mapper.readValue(new File("src/main/resources/W1/y.json"), new TypeReference<List<float[]>>(){});
             return new HandWrittenOneOrZeroDataSet(this);
         }
     }

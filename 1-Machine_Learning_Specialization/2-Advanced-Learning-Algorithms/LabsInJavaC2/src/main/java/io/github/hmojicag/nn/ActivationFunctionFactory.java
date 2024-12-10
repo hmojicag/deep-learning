@@ -10,6 +10,8 @@ public class ActivationFunctionFactory {
             return new LinearActivationFunction(w, b);
         } else if (type == ActivationFunctionType.SIGMOID) {
             return new SigmoidActivationFunction(w, b);
+        } else if (type == ActivationFunctionType.RELU) {
+            return new ReLUActivationFunction(w, b);
         }
         throw new IllegalArgumentException("Can't recognize ActivationFunctionType");
     }
