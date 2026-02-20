@@ -19,3 +19,5 @@ hs_err_pid*
 .project
 .springBeans
 .idea
+
+.DS_Store

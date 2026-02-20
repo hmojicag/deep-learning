@@ -1,0 +1,47 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product:
+  version: 
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Overview
+    output: web, pdf
+    folderitems:
+
+    - title: Main Notes
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Surfing Attendance
+      url: /overview_surfing_attendance.html
+      output: web, pdf
+      type: homepage
+
+  - title: Fast.AI
+    output: web, pdf
+    folderitems:
+
+    - title: Overview
+      url: /fast_ai_overview.html
+      output: web, pdf
+
+    - title: Lesson 1
+      url: /fast_ai_lesson_1.html
+      output: web, pdf
+# Copyright 2021 Google LLC
