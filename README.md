@@ -10,6 +10,7 @@ Run it:
 cd jekyll-gh-pages
 
 # Only needed the very first time
+gem install jekyll
 bundle update
 
 # Run the server and host your jekyll website locally
