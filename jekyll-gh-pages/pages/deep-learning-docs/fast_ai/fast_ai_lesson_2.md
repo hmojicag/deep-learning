@@ -100,7 +100,7 @@ This is still using the fastai library but still is a step forward in the right 
 ### My first Flask
 
 Just to test Flask I created a simple script that seems to be spinning up a web server and responding to requests.
-[3_flask_website_test.py](../../../../fast-ai/lesson2/3_flask_website_test.py)
+[https://github.com/hmojicag/deep-learning/blob/main/fast-ai/lesson2/3_flask_website_test.py](https://github.com/hmojicag/deep-learning/blob/main/fast-ai/lesson2/3_flask_website_test.py)
 
 This is interesting, Python has this very minimal approach compared to other languages and frameworks.
 
@@ -110,5 +110,9 @@ I'm following this documentation: [https://flask.palletsprojects.com/en/stable/q
 
 Run the Flask application located here:
 
-[4_flask_website](../../../../fast-ai/lesson2/4_flask_website)
+[https://github.com/hmojicag/deep-learning/tree/main/fast-ai/lesson2/4_flask_website](https://github.com/hmojicag/deep-learning/tree/main/fast-ai/lesson2/4_flask_website)
+
+The website should look something like this:
+
+![fastai_lesson_2_bear_type.png](../../../images/fastai_lesson_2_bear_type.png)
 
