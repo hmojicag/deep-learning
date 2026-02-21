@@ -36,6 +36,8 @@ How to install and manage Python in Mac: [https://eddieantonio.ca/blog/2020/01/2
 7. Choose your default Python version
 	1. `pyenv global 3.14.2`
 
+I made everything work with `Python version 3.13.0`.
+
 ## Python virtual environments
 
 ```sh
@@ -58,7 +60,7 @@ rm -rf .venv
 
 ```sh
 # Install Jupyter Notebooks globally
-pip install notebook ipykernel
+pip install notebook ipykernel ipython fastai flask
 
 # Create a virtual environment inside the Jupyter Notebooks folder (fastbook)
 # Register Environment as Jupyter Kernel

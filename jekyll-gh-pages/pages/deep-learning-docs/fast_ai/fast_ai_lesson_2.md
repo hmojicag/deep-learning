@@ -95,4 +95,20 @@ Now I want to use this model I just trained and make it available in a productio
 
 With that I will be able to be able to demonstrate the full cycle.
 
-This is is still using the fastai library but still is a step forward in the right direction.
+This is still using the fastai library but still is a step forward in the right direction.
+
+### My first Flask
+
+Just to test Flask I created a simple script that seems to be spinning up a web server and responding to requests.
+[3_flask_website_test.py](../../../../fast-ai/lesson2/3_flask_website_test.py)
+
+This is interesting, Python has this very minimal approach compared to other languages and frameworks.
+
+### Building a more complex site
+
+I'm following this documentation: [https://flask.palletsprojects.com/en/stable/quickstart/#a-minimal-application](https://flask.palletsprojects.com/en/stable/quickstart/#a-minimal-application)
+
+Run the Flask application located here:
+
+[4_flask_website](../../../../fast-ai/lesson2/4_flask_website)
+
