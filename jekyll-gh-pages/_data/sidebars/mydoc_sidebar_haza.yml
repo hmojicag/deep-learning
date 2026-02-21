@@ -44,4 +44,9 @@ entries:
     - title: Lesson 1
       url: /fast_ai_lesson_1.html
       output: web, pdf
+
+    - title: Lesson 2
+      url: /fast_ai_lesson_2.html
+      output: web, pdf
+
 # Copyright 2021 Google LLC

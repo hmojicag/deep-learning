@@ -37,16 +37,21 @@ And then I used that in the notebook, skipping the part where it tries to downlo
 
 ## Training, exporting and using the model
 
-I wanted some hands on experience with training a model, exporting it and then using it in a different notebook.
+I wanted some hands-on experience with training a model, exporting it and then using it in a different notebook.
 
 So I created the next python scripts to do just that:
 
 ### Train and export the model
 
+Run the script [https://github.com/hmojicag/deep-learning/blob/main/fast-ai/lesson2/1_train_bear_detector_model.py](https://github.com/hmojicag/deep-learning/blob/main/fast-ai/lesson2/1_train_bear_detector_model.py)
+
+It will train the model using the data in the folder.
+
 ```sh
 python fast-ai/lesson2/1_train_bear_detector_model.py
 ```
 
+Sample output
 ```txt
 Training model with data from fast-ai/fastbook/images/bears and saving to fast-ai/lesson2
 epoch     train_loss  valid_loss  error_rate  time    
@@ -61,10 +66,15 @@ Saving model to fast-ai/lesson2
 
 ### Use the model to make inferences on bear images
 
+Run the script [https://github.com/hmojicag/deep-learning/blob/main/fast-ai/lesson2/2_load_model_and_infer.py](https://github.com/hmojicag/deep-learning/blob/main/fast-ai/lesson2/2_load_model_and_infer.py)
+
+It will load the model just trained and it will make inferences on the images on the folder `fast-ai/lesson2/bear-samples` and print the results to the console.
+
 ```sh
 python fast-ai/lesson2/2_load_model_and_infer.py
 ```
 
+Sample output
 ```txt
 Model loaded successfully
 Running inference on images from fast-ai/lesson2/bear-samples
@@ -78,3 +88,11 @@ Image: teddy-bear-2.jpg, Prediction: teddy, Probability: 1.0000
 Image: teddy-bear-3.jpg, Prediction: teddy, Probability: 1.0000                                                                  
 Image: girzly-bear-2.jpg, Prediction: grizzly, Probability: 0.9922   
 ```
+
+## Deploy to production
+
+Now I want to use this model I just trained and make it available in a production environment.
+
+With that I will be able to be able to demonstrate the full cycle.
+
+This is is still using the fastai library but still is a step forward in the right direction.
